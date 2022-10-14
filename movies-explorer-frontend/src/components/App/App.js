@@ -1,26 +1,36 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Route, Switch, Redirect, withRouter, useHistory } from 'react-router-dom';
 import '../../index.css';
-// import Header from './Header/Header';
-// import Main from './Main/Main';
-// import Movies from './Movies/Movies';
-// import SavedMovies from './SavedMovies/SavedMovies';
-// import Profile from './Profile/Profile';
-// import Login from './Login/Login';
-// import Register from './Register/Register';
-// import PageNotFound from './PageNotFound/PageNotFound';
+import Header from '../Header/Header';
+import Promo from '../Promo/Promo';
+import NavTab from '../NavTab/NavTab';
+import Main from '../Main/Main';
+import Movies from '../Movies/Movies';
+import SavedMovies from '../SavedMovies/SavedMovies';
+import Profile from '../Profile/Profile';
+import Login from '../Login/Login';
+import Register from '../Register/Register';
+import PageNotFound from '../PageNotFound/PageNotFound';
+import Footer from '../Footer/Footer';
 
 function App() {
+
+  const [loggedIn, setLoggedIn] = useState(false);
+
   return (
     <div className="app_content">
       <div className="app_page">
-        {/* <Header />
+        <Header
+          loggedIn={loggedIn}
+        />
+        <Promo />
+        <NavTab />
 
-        <Switch>
+        {/* <Switch>
           <Route exact path="/">
             <Main />
-          </Route>
-          <Route path="/movies">
+          </Route> */}
+        {/* <Route path="/movies">
             <Movies />
           </Route>
           <Route path="/saved-movies">
@@ -34,13 +44,13 @@ function App() {
           </Route>
           <Route path="/signup">
             <Register />
-          </Route>
-        </Switch>
-        <Route path="*">
+          </Route> */}
+        {/* </Switch> */}
+        {/* <Route path="*">
           <PageNotFound />
-        </Route>
+        </Route> */}
 
-        <Footer /> */}
+        {/* <Footer /> */}
       </div>
     </div>
   );
