@@ -4,6 +4,7 @@ import '../../index.css';
 import Header from '../Header/Header';
 import Promo from '../Promo/Promo';
 import NavTab from '../NavTab/NavTab';
+import AboutProject from '../AboutProject/AboutProject';
 import Main from '../Main/Main';
 import Movies from '../Movies/Movies';
 import SavedMovies from '../SavedMovies/SavedMovies';
@@ -23,8 +24,10 @@ function App() {
         <Header
           loggedIn={loggedIn}
         />
-        <Promo />
-        <NavTab />
+        {/* <Promo />
+        <NavTab /> */}
+        <AboutProject />
+
 
         {/* <Switch>
           <Route exact path="/">
