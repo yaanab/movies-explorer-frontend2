@@ -5,6 +5,7 @@ import Header from '../Header/Header';
 import Promo from '../Promo/Promo';
 import NavTab from '../NavTab/NavTab';
 import AboutProject from '../AboutProject/AboutProject';
+import Techs from '../Techs/Techs'
 import Main from '../Main/Main';
 import Movies from '../Movies/Movies';
 import SavedMovies from '../SavedMovies/SavedMovies';
@@ -26,7 +27,9 @@ function App() {
         />
         {/* <Promo />
         <NavTab /> */}
-        <AboutProject />
+        {/* <AboutProject /> */}
+        <Techs />
+        
 
 
         {/* <Switch>
