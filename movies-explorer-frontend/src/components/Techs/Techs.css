@@ -10,17 +10,14 @@
   margin: 0;
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
-  line-height: 27px;
   letter-spacing: -0.04em;
   color: #FFFFFF;
   min-height: 50px;
-  border-bottom: 1px solid #DADADA;
   width: 100%;
+  border-bottom: 1px solid #DADADA;
 }
 
 .techs__subtitle {
-  margin: 0;
   font-style: normal;
   font-weight: 400;
   letter-spacing: -0.04em;
@@ -75,7 +72,6 @@
   .techs__title {
     font-size: 18px;
     line-height: 22px;
-    border-bottom: 1px solid #000000;
   }
 
   .techs__subtitle {
@@ -102,7 +98,6 @@
   .techs__title {
     font-size: 22px;
     line-height: 27px;
-    border-radius: 1px solid #DADADA;
   }
 
   .techs__subtitle {

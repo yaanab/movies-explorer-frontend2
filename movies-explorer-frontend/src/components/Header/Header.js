@@ -1,11 +1,8 @@
 import { Switch, Route, Link, NavLink, withRouter } from 'react-router-dom';
-import logoLoggedOut from '../../images/header-logo-logged-out.svg';
-import logoLoggedIn from '../../images/header-logo-logged-in.svg';
+import logo from '../../images/header-logo.svg';
 import profileIcon from '../../images/header-profile-icon.svg'
 
-function Header({ loggedIn }) {
-
-  const headerLogo = (loggedIn ? logoLoggedIn : logoLoggedOut);
+function Header() {
 
   return (
     <header className="header">
@@ -14,7 +11,7 @@ function Header({ loggedIn }) {
           <div className="header__main">
             <div className='header__content'>
               <Link to="/">
-                <img src={headerLogo} alt="Логотип" className="header__logo" />
+                <img src={logo} alt="Логотип" className="header__logo" />
               </Link>
               <div className="header__authorization">
                 <Link to="sign-up" className="header__auth-link">
@@ -30,7 +27,7 @@ function Header({ loggedIn }) {
         <Route path="/(saved-movies|movies|profile)/">
           <div className='header__content'>
             <Link to="/">
-              <img src={headerLogo} alt="Логотип" className="header__logo" />
+              <img src={logo} alt="Логотип" className="header__logo" />
             </Link>
             <nav className="header__movies-links">
               <NavLink to="movies" activeClassName='header__movies-link_active' className="header__movies-link">
