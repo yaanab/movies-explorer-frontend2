@@ -74,7 +74,7 @@
 @media screen and (max-width: 767px) {
   .about-project__content {
     width: 89%;
-    padding: 70px 0;
+    padding: 70px 0 61px;
   }
 
   .about-project__title {
@@ -153,6 +153,7 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .about-project__content {
     max-width: 87%;
+    padding: 89px 0 78px;
   }
 
   .about-project__article {
@@ -177,7 +178,7 @@
 @media screen and (min-width: 1023px) {
   .about-project__content {
     width: 89%;
-    padding: 110px 0;
+    padding: 109px 0 95px;
   }
 
   .about-project__article {
