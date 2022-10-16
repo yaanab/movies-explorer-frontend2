@@ -17,7 +17,7 @@ function AboutMe() {
               Я родился и живу в Саратове, закончил факультет экономики СГУ. У меня есть жена и дочь. Я люблю слушать музыку, а ещё увлекаюсь бегом. Недавно начал кодить. С 2015 года работал в компании «СКБ Контур». После того, как прошёл курс по веб-разработке, начал заниматься фриланс-заказами и ушёл с постоянной работы.
             </p>
           </div>
-          <a target="_blank" href="https://github.com/yaanab" className='about-me__git-link'>
+          <a target="_blank" rel="noreferrer" href="https://github.com/yaanab" className='about-me__git-link'>
             Github
           </a>
         </div>
@@ -30,17 +30,17 @@ function AboutMe() {
         <nav>
           <ul className='about-me__links'>
             <li>
-              <a className="about-me__link about-me__link_underlined" target="_blank" href="https://github.com/yaanab/how-to-learn">
+              <a className="about-me__link about-me__link_underlined" target="_blank" rel="noreferrer" href="https://github.com/yaanab/how-to-learn">
                 Статичный сайт
               </a>
             </li>
             <li>
-              <a className="about-me__link about-me__link_underlined" target="_blank" href="https://yaanab.github.io/russian-travel/index.html">
+              <a className="about-me__link about-me__link_underlined" target="_blank" rel="noreferrer" href="https://yaanab.github.io/russian-travel/index.html">
                 Адаптивный сайт
               </a>
             </li>
             <li>
-              <a className="about-me__link" target="_blank" href="https://yaana.nomoredomains.sbs">
+              <a className="about-me__link" target="_blank" rel="noreferrer" href="https://yaana.nomoredomains.sbs">
                 Одностраничное приложение
               </a>
             </li>
@@ -50,4 +50,5 @@ function AboutMe() {
     </div>
   );
 }
+
 export default AboutMe;
