@@ -272,11 +272,11 @@
   }
 
   .about-me__text {
-    max-width: 46.9%;
+    max-width: 51.9%;
   }
 
   .about-me__link {
     font-size: 30px;
-    background-size: 29px;
+    background-size: 18px;
   }
 }
