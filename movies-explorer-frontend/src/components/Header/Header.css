@@ -8,7 +8,6 @@
 
 .header__content {
   margin: 0 auto;
-  max-width: 89%;
   min-height: 74px;
   display: flex;
   align-items: center;
@@ -26,10 +25,9 @@
 .header__authorization {
   display: flex;
   flex-wrap: nowrap;
-  gap: 30px;
+  /* gap: 30px; */
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
   line-height: 16px;
 }
 
@@ -54,8 +52,6 @@
   cursor: pointer;
   background-color: #3DDC84;
   border-radius: 3px;
-  min-width: 76px;
-  min-height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,6 +60,53 @@
 .header__login-link:hover {
   opacity: 0.8;
 }
+
+@media screen and (max-width: 767px) {
+  .header__content {
+    max-width: 89%;
+  }
+
+  .header__authorization {
+    font-size: 10px;
+  }
+
+  .header__login-link {
+    min-width: 54px;
+    min-height: 26px;
+  }
+
+  .header__authorization {
+    gap: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__authorization {
+    font-size: 12px;
+  }
+
+  .header__login-link {
+    min-width: 76px;
+    min-height: 32px;
+  }
+
+  .header__authorization {
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .header__content {
+    max-width: 87%;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .header__content {
+    max-width: 89%;
+  }
+}
+
 
 .header__movies-links {
   display: flex;

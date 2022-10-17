@@ -21,11 +21,11 @@ function App() {
           <Route exact path="/">
             <Main />
           </Route>
-        </Switch>
-        {/* <Route path="/movies">
+          <Route path="/movies">
             <Movies />
           </Route>
-          <Route path="/saved-movies">
+        </Switch>
+        {/* <Route path="/saved-movies">
             <SavedMovies />
           </Route>
           <Route path="/profile">
