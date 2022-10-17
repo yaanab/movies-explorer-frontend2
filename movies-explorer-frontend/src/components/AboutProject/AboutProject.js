@@ -1,11 +1,9 @@
-import { Link } from 'react-router-dom';
-
 function AboutProject() {
   return (
-    <div className="about-project__content">
-      <Link to="/" className="about-project__title">
+    <div id="about-project" className="about-project__content">
+      <h2 className="about-project__title">
         О проекте
-      </Link>
+      </h2>
       <article className='about-project__article'>
         <h2 className='about-project__subtitle'>Дипломный проект включал 5 этапов</h2>
         <p className='about-project__text'>

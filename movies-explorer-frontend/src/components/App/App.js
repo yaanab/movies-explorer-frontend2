@@ -17,16 +17,6 @@ function App() {
   return (
     <div className="app_content">
       <div className="app_page">
-        {/* <Header /> */}
-        {/* <Promo /> */}
-        {/* <NavTab /> */}
-        {/* <AboutProject /> */}
-        {/* <Techs /> */}
-        {/* <AboutMe /> */}
-        {/* <Footer /> */}
-
-
-
         <Switch>
           <Route exact path="/">
             <Main />
