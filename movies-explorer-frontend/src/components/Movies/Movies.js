@@ -1,9 +1,13 @@
 import Header from '../Header/Header';
 
-function Movies() {
+function Movies({ isNavPopupOpen, onNavMenuClick, onNavPopupClose }) {
   return (
     <>
-      <Header />
+      <Header
+        isNavPopupOpen={isNavPopupOpen}
+        onNavMenuClick={onNavMenuClick}
+        onNavPopupClose={onNavPopupClose}
+      />
     </>
   )
 }

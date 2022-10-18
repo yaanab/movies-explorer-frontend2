@@ -1,8 +1,13 @@
-import { Switch, Route, Link, NavLink, withRouter } from 'react-router-dom';
+import { Switch, Route, Link, withRouter } from 'react-router-dom';
 import logo from '../../images/header-logo.svg';
-import profileIcon from '../../images/header-profile-icon.svg'
+import menuIcon from '../../images/menu-icon.svg';
+import Navigation from '../Navigation/Navigation';
 
-function Header() {
+function Header({ isNavPopupOpen, onNavMenuClick, onNavPopupClose }) {
+
+  function stopPropagation(e) {
+    e.stopPropagation();
+  }
 
   return (
     <header className="header">
@@ -29,18 +34,19 @@ function Header() {
             <Link to="/">
               <img src={logo} alt="Логотип" className="header__logo" />
             </Link>
-            <nav className="header__movies-links">
-              <NavLink to="movies" activeClassName='header__movies-link_active' className="header__movies-link">
-                Фильмы
-              </NavLink>
-              <NavLink to="saved-movies" activeClassName='header__movies-link_active' className="header__movies-link">
-                Сохраненные фильмы
-              </NavLink>
-            </nav>
-            <Link to="profile" className='header__profile'>
-                <img src={profileIcon} alt="Контур человека до плеч" className="header__profile-icon" />
-                <h2 className='header__profile-text'>Аккаунт</h2>
-            </Link>
+            <div className='header__open-nav'>
+              <Navigation isNavPopupOpen={isNavPopupOpen} />
+            </div>
+            <button type="button" className='header__nav-menu' onClick={onNavMenuClick}>
+              <img src={menuIcon} alt="Кнопка открытия меню навигации" className="header__nav-menu-img" />
+            </button>
+            <div onClick={onNavPopupClose} className={`header__nav-popup ${isNavPopupOpen && "header__nav-popup_opened"}`}>
+              <div onClick={stopPropagation} className='header__nav-popup-container'>
+                <h1>hello</h1>
+              <button onClick={onNavPopupClose} aria-label="Закрыть" type="button" className="header__nav-popup-close-btn"></button>
+              </div>
+              <Navigation isNavPopupOpen={isNavPopupOpen} />
+            </div>
           </div>
         </Route>
       </Switch>

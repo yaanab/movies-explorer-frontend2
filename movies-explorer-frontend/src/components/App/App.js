@@ -13,6 +13,15 @@ import PageNotFound from '../PageNotFound/PageNotFound';
 function App() {
 
   const [loggedIn, setLoggedIn] = useState(false);
+  const [isNavPopupOpen, setIsNavPopupOpen] = useState(false);
+
+  function havdleNavPopupOpen() {
+    setIsNavPopupOpen(true);
+  }
+
+  function havdleNavPopupClose() {
+    setIsNavPopupOpen(false);
+  }
 
   return (
     <div className="app_content">
@@ -22,7 +31,11 @@ function App() {
             <Main />
           </Route>
           <Route path="/movies">
-            <Movies />
+            <Movies 
+            isNavPopupOpen={isNavPopupOpen}
+            onNavMenuClick={havdleNavPopupOpen}
+            onNavPopupClose={havdleNavPopupClose}
+            />
           </Route>
         </Switch>
         {/* <Route path="/saved-movies">

@@ -1,0 +1,66 @@
+.navigation__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation__movies-links {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 16px;
+}
+
+.navigation__movies-link {
+  font-style: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: #FFFFFF;
+  font-weight: 400;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.navigation__movies-link:hover {
+  opacity: 0.7;
+}
+
+.navigation__movies-link_active {
+  font-weight: 500;
+}
+
+.navigation__profile {
+  min-width: 100px;
+  min-height: 32px;
+  box-sizing: border-box;
+  border: 2px solid rgba(170, 170, 170, 0.2);
+  border-radius: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 7px;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navigation__profile:hover {
+  opacity: 0.7;
+}
+
+.navigation__profile-icon {
+  width: 12px;
+  height: 14px;
+  object-fit: contain;
+}
+
+.navigation__profile-text {
+  margin: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
