@@ -30,15 +30,17 @@ function App() {
       <div className="app_page">
         <Switch>
           <Route exact path="/">
-            <Header />
+            <Header
+              loggedIn={loggedIn}
+            />
             <Main />
             <Footer />
           </Route>
           <Route path="/movies">
-            <Movies 
-            isNavPopupOpen={isNavPopupOpen}
-            onNavMenuClick={havdleNavPopupOpen}
-            onNavPopupClose={havdleNavPopupClose}
+            <Movies
+              isNavPopupOpen={isNavPopupOpen}
+              onNavMenuClick={havdleNavPopupOpen}
+              onNavPopupClose={havdleNavPopupClose}
             />
           </Route>
         </Switch>

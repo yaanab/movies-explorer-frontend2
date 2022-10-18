@@ -3,7 +3,7 @@ import logo from '../../images/header-logo.svg';
 import menuIcon from '../../images/menu-icon.svg';
 import Navigation from '../Navigation/Navigation';
 
-function Header({ isNavPopupOpen, onNavMenuClick, onNavPopupClose }) {
+function Header({ isNavPopupOpen, onNavMenuClick, onNavPopupClose, loggedIn }) {
 
   function stopPropagation(e) {
     e.stopPropagation();
@@ -18,14 +18,16 @@ function Header({ isNavPopupOpen, onNavMenuClick, onNavPopupClose }) {
               <Link to="/">
                 <img src={logo} alt="Логотип" className="header__logo" />
               </Link>
-              <div className="header__authorization">
-                <Link to="sign-up" className="header__auth-link">
-                  Регистрация
-                </Link>
-                <Link to="sign-in" className="header__login-link">
-                  Войти
-                </Link>
-              </div>
+              {!loggedIn &&
+                <div className="header__authorization">
+                  <Link to="sign-up" className="header__auth-link">
+                    Регистрация
+                  </Link>
+                  <Link to="sign-in" className="header__login-link">
+                    Войти
+                  </Link>
+                </div>
+              }
             </div>
           </div>
         </Route>
@@ -35,17 +37,17 @@ function Header({ isNavPopupOpen, onNavMenuClick, onNavPopupClose }) {
               <img src={logo} alt="Логотип" className="header__logo" />
             </Link>
             <div className='header__open-nav'>
-              <Navigation isNavPopupOpen={isNavPopupOpen} />
+              <Navigation />
             </div>
             <button type="button" className='header__nav-menu' onClick={onNavMenuClick}>
               <img src={menuIcon} alt="Кнопка открытия меню навигации" className="header__nav-menu-img" />
             </button>
             <div onClick={onNavPopupClose} className={`header__nav-popup ${isNavPopupOpen && "header__nav-popup_opened"}`}>
               <div onClick={stopPropagation} className='header__nav-popup-container'>
-                <h1>hello</h1>
-              <button onClick={onNavPopupClose} aria-label="Закрыть" type="button" className="header__nav-popup-close-btn"></button>
+                <Navigation isNavPopupOpen={isNavPopupOpen} />
+                <button onClick={onNavPopupClose} aria-label="Закрыть" type="button" className="header__nav-popup-close-btn"></button>
               </div>
-              <Navigation isNavPopupOpen={isNavPopupOpen} />
+
             </div>
           </div>
         </Route>
