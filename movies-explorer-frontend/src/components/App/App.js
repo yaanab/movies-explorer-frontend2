@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Route, Switch, Redirect, withRouter, useHistory } from 'react-router-dom';
 import '../../index.css';
 
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 import Main from '../Main/Main';
 import Movies from '../Movies/Movies';
 import SavedMovies from '../SavedMovies/SavedMovies';
@@ -28,7 +30,9 @@ function App() {
       <div className="app_page">
         <Switch>
           <Route exact path="/">
+            <Header />
             <Main />
+            <Footer />
           </Route>
           <Route path="/movies">
             <Movies 
