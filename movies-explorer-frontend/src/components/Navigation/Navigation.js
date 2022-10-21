@@ -1,10 +1,15 @@
 import { Link, NavLink } from 'react-router-dom';
 import profileIcon from '../../images/header-profile-icon.svg';
 
-function Navigation() {
+function Navigation({ isNavPopupOpen }) {
   return (
     <nav className="navigation__content">
       <div className="navigation__movies-links">
+        {isNavPopupOpen &&
+          <NavLink exact to="/" activeClassName='navigation__movies-link_active' className="navigation__movies-link">
+            Главная
+          </NavLink>
+        }
         <NavLink to="movies" activeClassName='navigation__movies-link_active' className="navigation__movies-link">
           Фильмы
         </NavLink>

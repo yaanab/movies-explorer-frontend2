@@ -84,10 +84,10 @@
   top: 0;
   left: 0;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   visibility: hidden;
   opacity: 0;
-  transition: 0.2s ease-in-out;
+  transition: 0.05s ;
   z-index: 5;
 }
 
@@ -142,7 +142,7 @@
 
   .header__nav-popup-container {
     width: 100%;
-    padding-top: 144px;
+    padding: 144px 0 54px;
   }
 
   .header__nav-popup-close-btn {
@@ -167,7 +167,7 @@
 
   .header__nav-popup-container {
     width: 520px;
-    padding-top: 159px;
+    padding: 159px 0 90px;
   }
 
   .header__nav-popup-close-btn {
@@ -198,5 +198,9 @@
 
   .header__open-nav {
     display: block;
+  }
+
+  .header__nav-popup_opened {
+    visibility: hidden;
   }
 }
