@@ -1,10 +1,9 @@
-import FilterCheckbox from "../FilterCheckbox/FilterCheckbox";
+import SearchForm from "../SearchForm/SearchForm";
 
 function Movies() {
   return (
     <>
-      <FilterCheckbox
-        label="Короткометражки" />
+      <SearchForm />
     </>
   )
 }

@@ -1,6 +1,6 @@
 .filter__content {
   background-color: #222222;
-  display: flex;
+  width: fit-content;
 }
 
 .filter__checkbox {
