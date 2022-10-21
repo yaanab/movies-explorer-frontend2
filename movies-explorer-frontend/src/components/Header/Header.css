@@ -87,7 +87,7 @@
   justify-content: flex-end;
   visibility: hidden;
   opacity: 0;
-  transition: 0.05s ;
+  transition: 0.05s;
   z-index: 5;
 }
 
@@ -113,8 +113,6 @@
   position: absolute;
   cursor: pointer;
   transition: 0.2s ease-in-out;
-  width: 22px;
-  height: 22px;
 }
 
 @media screen and (max-width: 767px) {
@@ -142,12 +140,14 @@
 
   .header__nav-popup-container {
     width: 100%;
-    padding: 144px 0 54px;
+    padding: 144px 0 46px;
   }
 
   .header__nav-popup-close-btn {
-    top: 13.5px;
-    right: 13.5px;
+    width: 30px;
+    height: 30px;
+    top: 14px;
+    right: 14px;
   }
 }
 
@@ -171,6 +171,8 @@
   }
 
   .header__nav-popup-close-btn {
+    width: 30px;
+    height: 30px;
     top: 22.5px;
     right: 22.5px;
   }
