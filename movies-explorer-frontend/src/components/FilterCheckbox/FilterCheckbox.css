@@ -1,5 +1,6 @@
 .filter__content {
-  background-color: #222222;
+  /* background-color: #222222; */
+  background-color: transparent;
   width: fit-content;
 }
 
