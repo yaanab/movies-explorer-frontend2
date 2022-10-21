@@ -1,13 +1,10 @@
-import Header from '../Header/Header';
+import FilterCheckbox from "../FilterCheckbox/FilterCheckbox";
 
-function Movies({ isNavPopupOpen, onNavMenuClick, onNavPopupClose }) {
+function Movies() {
   return (
     <>
-      <Header
-        isNavPopupOpen={isNavPopupOpen}
-        onNavMenuClick={onNavMenuClick}
-        onNavPopupClose={onNavPopupClose}
-      />
+      <FilterCheckbox
+        label="Короткометражки" />
     </>
   )
 }

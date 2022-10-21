@@ -37,11 +37,16 @@ function App() {
             <Footer />
           </Route>
           <Route path="/movies">
-            <Movies
+          <Header
               isNavPopupOpen={isNavPopupOpen}
               onNavMenuClick={havdleNavPopupOpen}
               onNavPopupClose={havdleNavPopupClose}
             />
+            <Movies />
+            <Footer />
+          </Route>
+          <Route>
+            
           </Route>
         </Switch>
         {/* <Route path="/saved-movies">
