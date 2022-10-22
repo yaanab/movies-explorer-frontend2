@@ -11,7 +11,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background: #222222;
   border-radius: 9px;
 }
 
@@ -94,16 +93,21 @@
   }
 
   .search__form-input {
-    margin-left: 19px;
+    margin-left: 13px;
     width: 73%;
   }
 
   .search__form-input::placeholder {
     font-size: 14px;
+    padding-left: 6px;
   }
 }
 
 @media screen and (min-width: 768px) {
+  .search__form {
+    background: #222222;
+  }
+
   .search__filter-area {
     border-left: 1px solid #505050;
     min-height: 40px;
