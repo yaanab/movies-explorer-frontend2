@@ -12,12 +12,42 @@ import Login from '../Login/Login';
 import Register from '../Register/Register';
 import PageNotFound from '../PageNotFound/PageNotFound';
 
+import movieImg1 from "../../images/movie-img-1.png";
+import movieImg2 from "../../images/movie-img-2.png";
+
 function App() {
+
+  const cards = [
+    {
+      'nameRU': '33 слова о дизайне',
+      'duration': '1ч 47м',
+      'image': movieImg2,
+      'movieId': '1265458'
+    },
+    {
+      'nameRU': '33 слова о дизайне',
+      'duration': '1ч 47м',
+      'image': movieImg1,
+      'movieId': '1265488'
+    },
+    {
+      'nameRU': '33 слова о дизайне',
+      'duration': '1ч 47м',
+      'image': movieImg2,
+      'movieId': '1265555'
+    },
+    {
+      'nameRU': '33 слова о дизайне',
+      'duration': '1ч 47м',
+      'image': movieImg1,
+      'movieId': '1233333'
+    },
+  ]
 
   const [loggedIn, setLoggedIn] = useState(false);
   const [isNavPopupOpen, setIsNavPopupOpen] = useState(false);
   const [isFilmSaved, setIsFilmSaved] = useState(true);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
 
   function havdleNavPopupOpen() {
     setIsNavPopupOpen(true);
@@ -45,13 +75,23 @@ function App() {
               onNavPopupClose={havdleNavPopupClose}
             />
             <Movies
+              cards={cards}
               isLoading={isLoading}
               isFilmSaved={isFilmSaved}
             />
             <Footer />
           </Route>
-          <Route>
-
+          <Route path="/saved-movies">
+            <Header
+              isNavPopupOpen={isNavPopupOpen}
+              onNavMenuClick={havdleNavPopupOpen}
+              onNavPopupClose={havdleNavPopupClose}
+            />
+            <Movies
+              isLoading={isLoading}
+              isFilmSaved={isFilmSaved}
+            />
+            <Footer />
           </Route>
         </Switch>
         {/* <Route path="/saved-movies">
