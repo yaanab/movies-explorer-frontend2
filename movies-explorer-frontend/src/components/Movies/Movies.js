@@ -3,13 +3,13 @@ import MoviesCard from "../MoviesCard/MoviesCard";
 import MoviesCardList from "../MoviesCardList/MoviesCardList";
 
 
-function Movies({ isFilmSaved, handleSaveFilm }) {
+function Movies({ isFilmSaved }) {
   return (
     <div className="movies__content">
       {/* <SearchForm /> */}
-      <MoviesCard
+      {/* <MoviesCard
         isFilmSaved={isFilmSaved}
-      />
+      /> */}
 
       <MoviesCardList />
 
