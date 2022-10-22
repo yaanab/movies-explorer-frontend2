@@ -11,15 +11,13 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background: orange;
-  /* background: #222222; */
+  background: #222222;
   border-radius: 9px;
 }
 
 .search__filter-area {
   display: flex;
   align-items: center;
-  background-color: green;
 }
 
 .search__input-area {
@@ -29,9 +27,7 @@
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-  
-  /* background: #222222; */
-  background: red;
+  background: #222222;
   border-radius: 9px;
 }
 
@@ -148,8 +144,6 @@
     padding-left: 20px;
   }
 }
-
-@media screen and (max-width: 1023px) {}
 
 @media screen and (min-width: 1024px) {
   .search__content {
