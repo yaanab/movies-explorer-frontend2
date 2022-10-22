@@ -1,5 +1,6 @@
 import SearchForm from "../SearchForm/SearchForm";
 import MoviesCard from "../MoviesCard/MoviesCard";
+import MoviesCardList from "../MoviesCardList/MoviesCardList";
 
 
 function Movies({ isFilmSaved, handleSaveFilm }) {
@@ -9,6 +10,8 @@ function Movies({ isFilmSaved, handleSaveFilm }) {
       <MoviesCard
         isFilmSaved={isFilmSaved}
       />
+
+      <MoviesCardList />
 
 
     </div>

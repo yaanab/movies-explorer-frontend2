@@ -1,15 +1,7 @@
-import image from "../../images/movie-img-2.png";
 import saveButton from "../../images/save-btn.png";
 import saveButtonActive from "../../images/save-btn-active.png";
 
-const card = {
-  'nameRU': '33 слова о дизайне',
-  'duration': '1ч 47м',
-  'image': image,
-  'movieId': '1265458'
-}
-
-function MoviesCard({ isFilmSaved }) {
+function MoviesCard({ card, isFilmSaved }) {
 
   return (
     <article className="movies-card">
@@ -25,7 +17,7 @@ function MoviesCard({ isFilmSaved }) {
         }
         {isFilmSaved &&
           <button aria-label="Сохранить фильм" type="button" className="movies-card__save-film">
-            <img className="movies-card__save-film-img" src={saveButtonActive} alt="Удалить фильм" />
+            <img className="movies-card__save-film-img" src={saveButtonActive} alt="Удалить  фильм" />
           </button>
         }
       </div>
