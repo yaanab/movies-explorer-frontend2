@@ -17,6 +17,7 @@ function App() {
   const [loggedIn, setLoggedIn] = useState(false);
   const [isNavPopupOpen, setIsNavPopupOpen] = useState(false);
   const [isFilmSaved, setIsFilmSaved] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   function havdleNavPopupOpen() {
     setIsNavPopupOpen(true);
@@ -38,17 +39,19 @@ function App() {
             <Footer />
           </Route>
           <Route path="/movies">
-          <Header
+            <Header
               isNavPopupOpen={isNavPopupOpen}
               onNavMenuClick={havdleNavPopupOpen}
               onNavPopupClose={havdleNavPopupClose}
             />
-            <Movies 
-            isFilmSaved={isFilmSaved} />
+            <Movies
+              isLoading={isLoading}
+              isFilmSaved={isFilmSaved}
+            />
             <Footer />
           </Route>
           <Route>
-            
+
           </Route>
         </Switch>
         {/* <Route path="/saved-movies">

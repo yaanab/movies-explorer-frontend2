@@ -1,5 +1,6 @@
 import SearchForm from "../SearchForm/SearchForm";
 import MoviesCardList from "../MoviesCardList/MoviesCardList";
+import Preloader from "../PreLoader/Preloader";
 import movieImg1 from "../../images/movie-img-1.png";
 import movieImg2 from "../../images/movie-img-2.png";
 
@@ -30,14 +31,19 @@ const cards = [
   },
 ]
 
-function Movies({ isFilmSaved }) {
+function Movies({ isLoading, isFilmSaved }) {
   return (
     <div className="movies__content">
       <SearchForm />
-      <MoviesCardList
-        cards={cards}
-        isFilmSaved={isFilmSaved}
-      />
+      {!isLoading &&
+        <MoviesCardList
+          cards={cards}
+          isFilmSaved={isFilmSaved}
+        />
+      }
+      {isLoading &&
+        <Preloader />
+      }
     </div>
   );
 }
