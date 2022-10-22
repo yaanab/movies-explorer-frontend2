@@ -1,9 +1,16 @@
 import SearchForm from "../SearchForm/SearchForm";
+import MoviesCard from "../MoviesCard/MoviesCard";
 
-function Movies() {
+
+function Movies({ isFilmSaved, handleSaveFilm }) {
   return (
     <div className="movies__content">
-      <SearchForm />
+      {/* <SearchForm /> */}
+      <MoviesCard
+        isFilmSaved={isFilmSaved}
+      />
+
+
     </div>
   );
 }
