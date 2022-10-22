@@ -89,6 +89,7 @@
   .search__form {
     flex-direction: column;
     width: 100%;
+    gap: 46px;
   }
 
   .search__form-button {
