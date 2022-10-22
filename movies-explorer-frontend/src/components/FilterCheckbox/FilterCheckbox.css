@@ -1,10 +1,12 @@
 .filter__content {
   background-color: transparent;
   width: fit-content;
+  position: relative;
 }
 
 .filter__checkbox {
   visibility: hidden;
+  position: absolute;
 }
 
 .filter__checkbox-label {
@@ -21,7 +23,7 @@ input[type="checkbox"]:not(:checked)+label:before {
   content: "";
   position: absolute;
   left: 0;
-  top: 2px;
+  top: 0px;
   width: 34px;
   height: 14px;
   background: #2BE080;
@@ -42,7 +44,7 @@ input[type="checkbox"]:checked+label:after,
 input[type="checkbox"]:not(:checked)+label:after {
   content: "";
   position: absolute;
-  top: 4px;
+  top: 2px;
   width: 10px;
   height: 10px;
   border-radius: 50%;
