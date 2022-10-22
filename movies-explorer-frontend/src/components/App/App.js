@@ -46,8 +46,8 @@ function App() {
 
   const [loggedIn, setLoggedIn] = useState(false);
   const [isNavPopupOpen, setIsNavPopupOpen] = useState(false);
-  const [isFilmSaved, setIsFilmSaved] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
+  const [isButtonClicked, setIsButtonClicked] = useState(true);
 
   function havdleNavPopupOpen() {
     setIsNavPopupOpen(true);
@@ -77,7 +77,8 @@ function App() {
             <Movies
               cards={cards}
               isLoading={isLoading}
-              isFilmSaved={isFilmSaved}
+              isButtonClicked={isButtonClicked}
+              isFilmSaved={false}
             />
             <Footer />
           </Route>
@@ -87,9 +88,9 @@ function App() {
               onNavMenuClick={havdleNavPopupOpen}
               onNavPopupClose={havdleNavPopupClose}
             />
-            <Movies
-              isLoading={isLoading}
-              isFilmSaved={isFilmSaved}
+            <SavedMovies
+              cards={cards}
+              isFilmSaved={true}
             />
             <Footer />
           </Route>

@@ -40,7 +40,7 @@
   color: #8B8B8B;
 }
 
-.movies-card__save-film {
+.movies-card__button {
   border: none;
   padding: 0;
   width: 30px;
@@ -50,12 +50,12 @@
   transition: 0.2s ease-in-out;
 }
 
-.movies-card__save-film-img {
+.movies-card__button-img {
   width: 30px;
   height: 30px;
 }
 
-.movies-card__save-film:hover {
+.movies-card__button:hover {
   opacity: 0.8;
 }
 

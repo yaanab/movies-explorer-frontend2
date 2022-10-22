@@ -2,7 +2,7 @@ import SearchForm from "../SearchForm/SearchForm";
 import MoviesCardList from "../MoviesCardList/MoviesCardList";
 import Preloader from "../PreLoader/Preloader";
 
-function Movies({ cards, isLoading, isFilmSaved }) {
+function Movies({ cards, isLoading, isButtonClicked, isFilmSaved }) {
   return (
     <div className="movies__content">
       <SearchForm />
@@ -10,6 +10,7 @@ function Movies({ cards, isLoading, isFilmSaved }) {
         <MoviesCardList
           cards={cards}
           isFilmSaved={isFilmSaved}
+          isButtonClicked={isButtonClicked}
         />
       }
       {isLoading &&
