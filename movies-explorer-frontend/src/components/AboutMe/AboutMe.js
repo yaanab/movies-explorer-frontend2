@@ -2,7 +2,7 @@ import photo from '../../images/about-me-photo.JPG';
 
 function AboutMe() {
   return (
-    <div id="about-me" className="about-me__content">
+    <section id="about-me" className="about-me__content">
       <h2 className="about-me__title">
         Студент
       </h2>
@@ -47,7 +47,7 @@ function AboutMe() {
           </ul>
         </nav>
       </div>
-    </div>
+    </section>
   );
 }
 
