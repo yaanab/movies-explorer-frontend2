@@ -112,7 +112,12 @@
   border: none;
   position: absolute;
   cursor: pointer;
-  transition: 0.2s ease-in-out;
+  transition: 
+  0.2s ease-in-out;
+}
+
+.header__nav-popup-close-btn:hover {
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 767px) {
