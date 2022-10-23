@@ -94,13 +94,19 @@ function App() {
             />
             <Footer />
           </Route>
+          <Route path="/profile">
+          <Header
+              isNavPopupOpen={isNavPopupOpen}
+              onNavMenuClick={havdleNavPopupOpen}
+              onNavPopupClose={havdleNavPopupClose}
+            />
+            <Profile />
+          </Route>
         </Switch>
         {/* <Route path="/saved-movies">
             <SavedMovies />
           </Route>
-          <Route path="/profile">
-            <Profile />
-          </Route>
+          
           <Route path="/signin">
             <Login />
           </Route>
