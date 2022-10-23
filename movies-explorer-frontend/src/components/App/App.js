@@ -8,9 +8,9 @@ import Main from '../Main/Main';
 import Movies from '../Movies/Movies';
 import SavedMovies from '../SavedMovies/SavedMovies';
 import Profile from '../Profile/Profile';
+import PageNotFound from '../PageNotFound/PageNotFound';
 import Login from '../Login/Login';
 import Register from '../Register/Register';
-import PageNotFound from '../PageNotFound/PageNotFound';
 
 import movieImg1 from "../../images/movie-img-1.png";
 import movieImg2 from "../../images/movie-img-2.png";
@@ -95,12 +95,15 @@ function App() {
             <Footer />
           </Route>
           <Route path="/profile">
-          <Header
+            <Header
               isNavPopupOpen={isNavPopupOpen}
               onNavMenuClick={havdleNavPopupOpen}
               onNavPopupClose={havdleNavPopupClose}
             />
             <Profile />
+          </Route>
+          <Route>
+            <PageNotFound />
           </Route>
         </Switch>
         {/* <Route path="/saved-movies">
