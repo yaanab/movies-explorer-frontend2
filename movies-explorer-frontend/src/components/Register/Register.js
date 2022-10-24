@@ -8,7 +8,7 @@ function Register() {
       button="Зарегистрироваться"
       text="Уже зарегистрированы?"
       link="/signin"
-      linkText="Зарегистрироваться"
+      linkText="Войти"
     />
   );
 }

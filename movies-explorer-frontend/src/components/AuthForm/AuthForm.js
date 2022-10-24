@@ -21,13 +21,14 @@ function AuthForm({ title, isNameBlock, button, text, link, linkText }) {
           <div className="auth-form__input-group">
             <label className="auth-form__label" htmlFor="password">Пароль</label>
             <input className="auth-form__input" type="password" id="password" name="password" required />
+            <span className="auth-form__error">Что-то пошло не так...</span>
           </div>
         </div>
         <button type="submit" className="auth-form__submit-btn">{button}</button>
       </form>
-      <div className="auth__form__link-block">
-        <p>{text}</p>
-        <Link to={link}>{linkText}</Link>
+      <div className="auth-form__link-block">
+        <p className="auth-form__text">{text}</p>
+        <Link to={link} className="auth-form__link">{linkText}</Link>
       </div>
     </div>
   );
