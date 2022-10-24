@@ -13,7 +13,7 @@ function Profile() {
       <form className="profile__form">
         <div className="profile__inputs">
           <div className="profile__input-group profile__input-group_underlined">
-            <label className="profile__label" htmlFor="narme">Имя</label>
+            <label className="profile__label" htmlFor="name">Имя</label>
             <input className="profile__input" type="text" id="name" name="name" placeholder="Имя" value={name || ""} required readOnly={!isEdit} autoComplete="on" />
           </div>
           <div className="profile__input-group">
