@@ -42,6 +42,7 @@
 @media screen and (max-width: 599px) {
   .portfolio {
     width: 90.3%;
+    padding-bottom: 50px;
   }
 
   .portfolio__title {
@@ -74,6 +75,7 @@
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   .portfolio {
     max-width: 87%;
+    padding-bottom: 70px;
   }
 
   .portfolio__link {
@@ -85,6 +87,7 @@
 @media screen and (min-width: 1023px) {
   .portfolio {
     width: 89%;
+    padding-bottom: 105px;
   }
 
   .portfolio__link {

@@ -74,7 +74,7 @@
 @media screen and (max-width: 599px) {
   .about-me__content {
     width: 90.3%;
-    padding: 70px 0 50px;
+    padding: 70px 0 0;
   }
 
   .about-me__title {
@@ -138,7 +138,7 @@
 @media screen and (min-width: 600px) and (max-width: 1023px) {
   .about-me__content {
     max-width: 87%;
-    padding: 90px 0 70px;
+    padding: 90px 0 0;
   }
 
   .about-me__description {
@@ -174,7 +174,7 @@
 @media screen and (min-width: 1023px) {
   .about-me__content {
     width: 89%;
-    padding: 110px 0 105px;
+    padding: 110px 0 0;
   }
 
   .about-me__description {
