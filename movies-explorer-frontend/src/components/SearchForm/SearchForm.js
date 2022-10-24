@@ -3,7 +3,7 @@ import findButton from '../../images/find-button.png';
 
 function SearchForm() {
   return (
-    <div className="search__content">
+    <section className="search__content">
       <form className="search__form">
         <div className="search__input-area">
           <input type="text" className="search__form-input" placeholder="Фильм" />
@@ -17,7 +17,7 @@ function SearchForm() {
           />
         </div>
       </form >
-    </div>
+    </section>
   );
 }
 
