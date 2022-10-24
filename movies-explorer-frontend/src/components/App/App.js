@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { Route, Switch, Redirect, withRouter, useHistory } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Route, Switch, withRouter } from 'react-router-dom';
 import '../../index.css';
 
 import Header from '../Header/Header';
@@ -105,24 +105,13 @@ function App() {
           <Route path="/signup">
             <Register />
           </Route>
+          <Route path="/signin">
+            <Login />
+          </Route>
           <Route>
             <PageNotFound />
           </Route>
         </Switch>
-        {/* <Route path="/saved-movies">
-            <SavedMovies />
-          </Route>
-          
-          <Route path="/signin">
-            <Login />
-          </Route>
-           */}
-        {/* </Switch> */}
-        {/* <Route path="*">
-          <PageNotFound />
-        </Route> */}
-
-        {/* <Footer /> */}
       </div>
     </div>
   );

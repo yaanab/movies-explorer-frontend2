@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import logo from '../../images/header-logo.svg';
 
-function AuthForm({ title, isNameBlock, button, text, link, linkText }) {
+function AuthForm({ title, isNameHidden, button, text, link, linkText }) {
   return (
     <div className="auth-form">
       <Link to="/">
@@ -10,7 +10,7 @@ function AuthForm({ title, isNameBlock, button, text, link, linkText }) {
       <h2 className="auth-form__title">{title}</h2>
       <form className="auth-form__form">
         <div className="auth-form__inputs">
-          <div className={`auth-form__input-group ${(isNameBlock) && "auth-form__input-group_block"}`}>
+          <div className={`auth-form__input-group ${(isNameHidden) && "auth-form__input-group_block"}`}>
             <label className="auth-form__label" htmlFor="name">Имя</label>
             <input className="auth-form__input" type="text" id="name" name="name" required />
           </div>

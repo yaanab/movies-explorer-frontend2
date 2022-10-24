@@ -4,7 +4,7 @@ function Register() {
   return (
     <AuthForm 
       title="Добро пожаловать!"
-      isNameBlock={false}
+      isNameHidden={false}
       button="Зарегистрироваться"
       text="Уже зарегистрированы?"
       link="/signin"
