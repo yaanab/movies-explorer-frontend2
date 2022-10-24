@@ -102,6 +102,9 @@ function App() {
             />
             <Profile />
           </Route>
+          <Route path="/signup">
+            <Register />
+          </Route>
           <Route>
             <PageNotFound />
           </Route>
@@ -113,9 +116,7 @@ function App() {
           <Route path="/signin">
             <Login />
           </Route>
-          <Route path="/signup">
-            <Register />
-          </Route> */}
+           */}
         {/* </Switch> */}
         {/* <Route path="*">
           <PageNotFound />

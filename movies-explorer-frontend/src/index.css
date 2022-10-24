@@ -1,6 +1,7 @@
 @import url(./vendor/normalize.css);
 @import url(./vendor/fonts/font.css);
 @import url(./components/App/App.css);
+@import url(./components/AuthForm/AuthForm.css);
 @import url(./components/AboutMe/AboutMe.css);
 @import url(./components/AboutProject/AboutProject.css);
 @import url(./components/App/App.css);
