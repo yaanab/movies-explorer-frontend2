@@ -4,7 +4,7 @@ import Preloader from "../PreLoader/Preloader";
 
 function Movies({ cards, isLoading, isButtonClicked, isFilmSaved }) {
   return (
-    <div className="movies__content">
+    <section className="movies__content">
       <SearchForm />
       {!isLoading &&
         <MoviesCardList
@@ -16,7 +16,7 @@ function Movies({ cards, isLoading, isButtonClicked, isFilmSaved }) {
       {isLoading &&
         <Preloader />
       }
-    </div>
+    </section>
   );
 }
 
