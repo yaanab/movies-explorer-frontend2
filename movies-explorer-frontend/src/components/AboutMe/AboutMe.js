@@ -8,7 +8,7 @@ function AboutMe() {
       </h2>
       <article className="about-me__description">
         <div className="about-me__text">
-          <div className='about-me__text-block'>
+          <div className="about-me__text-block">
             <h3 className="about-me__name">
               Виталий
             </h3>
@@ -17,11 +17,11 @@ function AboutMe() {
               Я родился и живу в Саратове, закончил факультет экономики СГУ. У меня есть жена и дочь. Я люблю слушать музыку, а ещё увлекаюсь бегом. Недавно начал кодить. С 2015 года работал в компании «СКБ Контур». После того, как прошёл курс по веб-разработке, начал заниматься фриланс-заказами и ушёл с постоянной работы.
             </p>
           </div>
-          <a target="_blank" rel="noreferrer" href="https://github.com/yaanab" className='about-me__git-link'>
+          <a target="_blank" rel="noreferrer" href="https://github.com/yaanab" className="about-me__git-link">
             Github
           </a>
         </div>
-        <img src={photo} alt="фото" className='about-me__photo' />
+        <img src={photo} alt="фото" className="about-me__photo" />
       </article>
 
     </section>

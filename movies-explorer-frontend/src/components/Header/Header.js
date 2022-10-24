@@ -14,7 +14,7 @@ function Header({ isNavPopupOpen, onNavMenuClick, onNavPopupClose, loggedIn }) {
       <Switch>
         <Route exact path="/">
           <div className="header__main">
-            <div className='header__content'>
+            <div className="header__content">
               <Link to="/">
                 <img src={logo} alt="Логотип" className="header__logo" />
               </Link>
@@ -32,18 +32,18 @@ function Header({ isNavPopupOpen, onNavMenuClick, onNavPopupClose, loggedIn }) {
           </div>
         </Route>
         <Route path="/(saved-movies|movies|profile)/">
-          <div className='header__content'>
+          <div className="header__content">
             <Link to="/">
               <img src={logo} alt="Логотип" className="header__logo" />
             </Link>
-            <div className='header__open-nav'>
+            <div className="header__open-nav">
               <Navigation />
             </div>
-            <button type="button" className='header__nav-menu' onClick={onNavMenuClick}>
+            <button type="button" className="header__nav-menu" onClick={onNavMenuClick}>
               <img src={menuIcon} alt="Кнопка открытия меню навигации" className="header__nav-menu-img" />
             </button>
             <div onClick={onNavPopupClose} className={`header__nav-popup ${isNavPopupOpen && "header__nav-popup_opened"}`}>
-              <div onClick={stopPropagation} className='header__nav-popup-container'>
+              <div onClick={stopPropagation} className="header__nav-popup-container">
                 <Navigation isNavPopupOpen={isNavPopupOpen} />
                 <button onClick={onNavPopupClose} aria-label="Закрыть" type="button" className="header__nav-popup-close-btn"></button>
               </div>

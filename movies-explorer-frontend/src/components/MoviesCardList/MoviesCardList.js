@@ -1,4 +1,4 @@
-import MoviesCard from "../MoviesCard/MoviesCard";
+import MoviesCard from '../MoviesCard/MoviesCard';
 
 function MoviesCardList({ cards, isButtonClicked, isFilmSaved }) {
   return (
@@ -8,9 +8,8 @@ function MoviesCardList({ cards, isButtonClicked, isFilmSaved }) {
           <MoviesCard key={card.movieId} card={card} isFilmSaved={isFilmSaved} isButtonClicked={isButtonClicked} />
         ))}
       </div>
-      <button type='button' className='movies__button-show-more'>Ещё</button>
+      <button type="button" className="movies__button-show-more">Ещё</button>
     </section>
-
   );
 }
 
