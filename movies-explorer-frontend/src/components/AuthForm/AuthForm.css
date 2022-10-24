@@ -42,7 +42,7 @@
 }
 
 .auth-form__input-group_block {
-  display: block;
+  display: none;
 }
 
 .auth-form__label {
@@ -149,7 +149,7 @@ input:autofill:active {
   }
 
   .auth-form__form {
-    min-height: 453px;
+    min-height: 466px;
   }
 
   .auth-form__submit-btn {

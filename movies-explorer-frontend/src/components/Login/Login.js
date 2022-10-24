@@ -3,12 +3,12 @@ import AuthForm from "../AuthForm/AuthForm";
 function Login() {
   return (
     <AuthForm 
-      title="Добро пожаловать!"
+      title="Рады видеть!"
       isNameHidden={true}
-      button="Зарегистрироваться"
-      text="Уже зарегистрированы?"
-      link="/signin"
-      linkText="Войти"
+      button="Войти"
+      text="Ещё не зарегистрированы?"
+      link="/signup"
+      linkText="Регистрация"
     />
   );
 }
