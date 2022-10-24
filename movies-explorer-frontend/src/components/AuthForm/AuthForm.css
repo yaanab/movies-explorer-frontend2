@@ -11,7 +11,7 @@
   transition: 0.2s ease-in-out;
 }
 
-.auth-form__logo {
+.auth-form__logo:hover {
   opacity: 0.8;
 }
 
@@ -135,6 +135,10 @@ input:autofill:active {
   text-decoration: none;
   cursor: pointer;
   transition: 0.2s ease-in-out;
+}
+
+.auth-form__link:hover {
+  opacity: 0.7;
 }
 
 @media screen and (max-width: 767px) {
